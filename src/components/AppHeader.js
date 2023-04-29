@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box'
 import { AppBar, Divider, Toolbar, IconButton } from '@mui/material';
 import { Facebook, Search, Twitter, YouTube } from '@mui/icons-material';
+import HeaderIcon from '../assets/images/Artifact badge no background.png';
 
 
 
@@ -21,8 +22,12 @@ const AppHeader = () => {
                         fontSize: '16px',
                         opacity: '1'
                     }}>
-                        <Box>
-                            IMG
+                        <Box
+                        sx={{
+                            display: 'flex',
+                            height: '80%'
+                        }}>
+                            <img src={HeaderIcon} alt='header-icon' />
                         </Box>
                         <Box sx={{ display: 'flex', height: '100%', alignItems: 'center' }}>
                             <Box pr='32px'>
